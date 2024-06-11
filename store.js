@@ -5,7 +5,8 @@ import { cryptoWaitReady } from "@polkadot/util-crypto";
 import { decodeAddress, blake2AsHex } from '@polkadot/util-crypto';
 
 
-const ITEM_TYPE = 'HOFA';
+const ITEM_TYPE = 'XYZ';
+
 
 const store = async () => {
   await cryptoWaitReady();
@@ -37,6 +38,7 @@ const store = async () => {
     [ITEM_TYPE, payloadHex],
     machineKeypair
   );
+ 
 
   console.log('try loading data...');
   const retrievedDataHex = await getStorage(machineKeypair.address, ITEM_TYPE);
