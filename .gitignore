@@ -1,0 +1,5 @@
+# Ignore seeds.json file
+seeds.json
+
+# Ignore node_modules directory
+node_modules/
