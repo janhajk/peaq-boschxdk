@@ -18,7 +18,7 @@ const verify = async () => {
     const machineSeed = seeds.owner;
     const machineKeypair = generateKeyPair(machineSeed);
 
-    const itemType = '5CLoPASpWHy6ywH84UzHK5JDyXd4JsjcpE2FrhTVZAswDADm';
+    const itemType = 'XYZ';
     const storedDataHex = await getStorage(itemType);
 
     if (!storedDataHex) {
